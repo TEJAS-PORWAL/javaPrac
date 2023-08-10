@@ -1,0 +1,51 @@
+package infor.pkg.aug10;
+
+import java.util.*;
+
+class Salary{
+
+	int salary=60000;
+
+}
+
+class Benefits extends Salary{
+
+	int benefits=5000;
+
+	
+
+}
+
+public class newCheck {
+
+ 
+
+	public static void main(String[] args) {
+
+		Benefits b1=new Benefits();
+
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("Please enter your base location");
+
+		String location;
+
+		location=sc.nextLine();
+
+		if(location=="blr"||location=="BANGALORE") {
+
+			System.out.println("The total payable salary is"+(b1.salary+b1.benefits));
+
+		}
+
+		else {
+
+			System.out.println("The total payable salary is"+b1.salary);
+
+		}
+
+	}
+
+ 
+
+}

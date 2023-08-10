@@ -1,0 +1,57 @@
+package infor.pkg.aug10;
+
+import java.util.*;
+
+class Salary{
+
+	static int salary=60000;
+	 public void setName(int salary){
+	        this.salary = salary;
+	    }
+
+	    public static int getName(){return salary;}
+
+}
+
+class Benefits extends Salary{
+
+	int benefits= 5000;
+
+	
+
+}
+
+public class newCheck extends Benefits {
+
+ 
+
+	public static void main(String[] args) {
+
+		Benefits b1=new Benefits();
+		
+
+//		Scanner sc=new Scanner(System.in);
+
+//		System.out.println("Please enter your base location");
+
+		String location="blr";
+
+//		location=sc.nextLine();
+
+		if(location=="blr") {
+
+			System.out.println("The total payable salary is "+(Salary.salary+b1.benefits));
+
+		}
+
+		else {
+
+			System.out.println("The total payable salary is"+Salary.salary);
+
+		}
+
+	}
+
+ 
+
+}
