@@ -1,0 +1,18 @@
+package infor.pkg.aug11;
+
+import java.util.Scanner;
+
+public class practiceProblems {
+
+	// print the star patterns problems...
+	Scanner Iin = new Scanner(System.in);
+	
+	System.out.println("Enter the number of rows ?");
+	int Rows = Iin.nextInt();
+	System.out.println("Enter the number of Columns ?");
+	int Columns = Iin.nextInt();
+	
+	
+	
+	
+}

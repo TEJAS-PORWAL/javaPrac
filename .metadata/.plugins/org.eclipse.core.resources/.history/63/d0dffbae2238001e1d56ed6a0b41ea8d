@@ -1,0 +1,13 @@
+package infor.pkg.aug11;
+
+public class StringProb {
+
+	public static void main(String[] args) {
+		String str = "this the practice string used in the entire program";
+		System.out.println(str);
+		
+		int length = str.length();
+		System.out.println(length);
+	}
+
+}

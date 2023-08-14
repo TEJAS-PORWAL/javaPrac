@@ -1,0 +1,45 @@
+package infor.pkg.aug10;
+
+import java.util.Scanner;
+
+abstract class Peoples{
+	String Name;
+	int age;
+	String profile;
+	
+	public void about(String Name, int age, String profile) {
+		// this is an abstract method	
+}
+}
+
+public class checkAbstraction extends Peoples{
+	
+	@Override
+	public void about(String Name, int age, String profile) {
+		System.out.println("Hi! I'm "+ Name + " I'm " +  age + " year old " + "working as a " + profile);
+	}
+	
+	
+	//MAIN METHOD
+	public static void main(String[] args) {
+
+		
+		Scanner cin = new Scanner(System.in);
+		int entry = cin.nextInt();
+		Peoples Emp1 = new checkAbstraction();
+		
+		while(entry>0) {
+		String EmpName = cin.nextLine();
+		int EmpAge = cin.nextInt();
+		String EmpRole = cin.nextLine();
+		
+		
+		Emp1.about(EmpName, EmpAge, EmpRole);
+		
+		entry--;
+		}	
+				
+		
+		
+	}
+}

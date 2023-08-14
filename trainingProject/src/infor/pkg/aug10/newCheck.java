@@ -17,8 +17,6 @@ class Benefits extends Salary{
 
 	int benefits= 5000;
 
-	
-
 }
 
 public class newCheck extends Benefits {

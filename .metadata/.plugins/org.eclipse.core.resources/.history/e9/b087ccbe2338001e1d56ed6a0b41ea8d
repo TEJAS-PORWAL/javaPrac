@@ -1,0 +1,44 @@
+package infor.pkg.aug11;
+
+import java.util.Scanner;
+
+public class StringProb {
+
+	public static void main(String[] args) {
+		
+		
+	Scanner Iin = new Scanner(System.in);
+	System.out.println("Enter the position of the character ?");
+	int pos = Iin.nextInt();
+		
+		
+		String str = "this the practice string used in the entire program";
+		System.out.println(str);
+		
+		//checking the length of the string
+		int length = str.length();
+		System.out.println(length);
+		
+		
+//		returning the character at the index'
+		char charAt = str.charAt(pos);
+		System.out.println("character at the pos: " + pos + " is " + charAt);
+		
+//	using the substring method...
+		String Substr = str.substring(2,5);
+		System.out.println(Substr);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}// end of psvm
+
+}// end of the class
